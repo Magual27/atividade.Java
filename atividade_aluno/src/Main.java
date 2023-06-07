@@ -21,6 +21,7 @@ public class Main {
 
         System.out.println("-------Selecione alguma das opcões-------");
         System.out.println("1 - soma\n2 - subtração\n3 - multiplicação\n4 - divisão\n5 - tabuada");
+        System.out.print("---> ");
         int res = leitor.nextInt();
 
         if (res == 1) {
@@ -37,7 +38,7 @@ public class Main {
             aluno1.div(n1, n2);
         } else if (res == 5) {
             System.out.println("---resultado---");
-            aluno1.calcTabuada((int)n1);
+            aluno1.calcTabuada((int) n1);
         }
 
     }
