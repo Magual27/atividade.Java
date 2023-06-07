@@ -46,13 +46,14 @@ public class Main {
 
             i = false;
 
-            System.out.println("Deseja usar de novo?\n1 - sim\n2 - finalizar programa");
+            System.out.println("Deseja usar de novo?\n1 - continuar\n2 - finalizar programa");
             int opcao = leitor.nextInt();
 
             if (opcao == 1) {
                 i = true;
             } else if (opcao == 2) {
                 i = false;
+                System.out.print("-------fim do programa-------");
             }
 
         }
