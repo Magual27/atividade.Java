@@ -1,12 +1,12 @@
 public class Sala {
 
-    private Integer id;
+    public Integer id;
 
-    private Integer numeroSala;
+    public Integer numeroSala;
 
-    private String nomeSala;
+    public String nomeSala;
 
-    private Integer qtdAlunos;
+    public Integer qtdAlunos;
 
     public Sala(Integer id, Integer numeroSala, String nomeSala, Integer qtdAlunos) {
         this.id = id;
@@ -47,6 +47,14 @@ public class Sala {
         this.qtdAlunos = qtdAlunos;
     }
 
-
+    @Override
+    public String toString() {
+        return "Sala{" +
+                "id=" + id +
+                ", numero da sala='" + numeroSala + '\'' +
+                ", nome da sala='" + nomeSala + '\'' +
+                ", quantidade de alunos='" + qtdAlunos + '\'' +
+                '}';
+    }
 
 }

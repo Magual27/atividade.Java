@@ -1,10 +1,10 @@
 public class Professor {
 
-    private Integer id;
+    public Integer id;
 
-    private String nome;
+    public String nome;
 
-    private String materia;
+    public String materia;
 
     public Professor(Integer id, String nome, String materia) {
         this.id = id;
@@ -37,6 +37,13 @@ public class Professor {
         this.materia = materia;
     }
 
-
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", materia='" + materia + '\'' +
+                '}';
+    }
 
 }
