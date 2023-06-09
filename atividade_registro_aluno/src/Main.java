@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -21,23 +22,23 @@ public class Main {
 
         System.out.println("---Sistema da escola tal---");
         while (keep) {
-            System.out.println("O que você deseja consultar?\n1- aluno\n2-Professor\n3-Sala\n4-Encerrar Sistema");
+            System.out.print("O que você deseja consultar?\n1 - aluno\n2 - Professor\n3 - Sala\n4 - Encerrar Sistema\n---> ");
             opcao = sc.nextInt();
             switch (opcao) {
                 case 1 -> {
                     opcao = 0;
-                    System.out.println("O que você deseja fazer\n1-Adicionar aluno\n2-Consultar aluno\n3-Mostrar alunos cadastrados");
+                    System.out.print("O que você deseja fazer? \n1 - Adicionar aluno\n2 - Consultar aluno\n3 - Mostrar alunos cadastrados\n---> ");
                     opcao = sc.nextInt();
                     switch (opcao) {
                         case 1 -> {
-                            System.out.println("Digite um indentificador numerico para esse aluno ");
+                            System.out.print("Digite um indentificador numerico para esse aluno\n---> ");
                             identificador = sc.nextInt();
-                            System.out.println("Digite o nome do aluno");
+                            System.out.print("Digite o nome do aluno\n---> ");
                             nome = sc.next();
                             alunos.add(new Aluno(identificador, nome));
                         }
                         case 2 -> {
-                            System.out.println("Digite o nome desse aluno");
+                            System.out.print("Digite o nome desse aluno\n---> ");
                             nomeProcurado = sc.next();
                             for (Aluno a : alunos) {
                                 if (a.nome.equals(nomeProcurado)) {
@@ -54,20 +55,20 @@ public class Main {
                 }
                 case 2 -> {
                     opcao = 0;
-                    System.out.println("O que você deseja fazer\n1-Adicionar professor\n2-Consultar professor\n3-Mostrar professores cadastrados");
+                    System.out.print("O que você deseja fazer? \n1 - Adicionar professor\n2 - Consultar professor\n3 - Mostrar professores cadastrados\n---> ");
                     opcao = sc.nextInt();
                     switch (opcao) {
                         case 1 -> {
-                            System.out.println("Digite um indentificador numerico para esse professor ");
+                            System.out.print("Digite um indentificador numerico para esse professor\n---> ");
                             identificador = sc.nextInt();
-                            System.out.println("Digite o nome do professor");
+                            System.out.print("Digite o nome do professor\n---> ");
                             nome = sc.next();
-                            System.out.println("Digite a materia do professor");
+                            System.out.print("Digite a materia do professor\n---> ");
                             materia = sc.next();
                             professores.add(new Professor(identificador, nome, materia));
                         }
                         case 2 -> {
-                            System.out.println("Digite o nome desse professor");
+                            System.out.print("Digite o nome desse professor\n---> ");
                             nomeProcurado = sc.next();
                             ;
                             for (Professor a : professores) {
@@ -85,22 +86,22 @@ public class Main {
                 }
                 case 3 -> {
                     opcao = 0;
-                    System.out.println("O que você deseja fazer\n1-Adicionar sala\n2-Consultar sala\n3-Mostrar salas cadastrados");
+                    System.out.print("O que você deseja fazer ?\n1 - Adicionar sala\n2 - Consultar sala\n3 - Mostrar salas cadastrados\n---> ");
                     opcao = sc.nextInt();
                     switch (opcao) {
                         case 1 -> {
-                            System.out.println("Digite um indentificador numerico para essa sala ");
+                            System.out.print("Digite um indentificador numerico para essa sala\n---> ");
                             identificador = sc.nextInt();
-                            System.out.println("Digite o numero da sala");
+                            System.out.print("Digite o numero da sala\n---> ");
                             numeroSala = sc.nextInt();
-                            System.out.println("Digite o nome da sala");
+                            System.out.print("Digite o nome da sala\n---> ");
                             nome = sc.next();
-                            System.out.println("Digite a quantidade de alunos na sala");
+                            System.out.print("Digite a quantidade de alunos na sala\n---> ");
                             qtdAlunos = sc.nextInt();
                             salas.add(new Sala(identificador, numeroSala, nome, qtdAlunos));
                         }
                         case 2 -> {
-                            System.out.println("Digite o nome da sala");
+                            System.out.print("Digite o nome da sala\n---> ");
                             nomeProcurado = sc.next();
                             ;
                             for (Sala a : salas) {
@@ -116,7 +117,10 @@ public class Main {
                         }
                     }
                 }
-                default -> keep = false;
+                default -> {
+                    keep = false;
+                    System.out.println("---Fim do programa---");
+                }
             }
         }
     }

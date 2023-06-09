@@ -49,12 +49,12 @@ public class Sala {
 
     @Override
     public String toString() {
-        return "Sala{" +
-                "id=" + id +
-                ", numero da sala='" + numeroSala + '\'' +
-                ", nome da sala='" + nomeSala + '\'' +
-                ", quantidade de alunos='" + qtdAlunos + '\'' +
-                '}';
+        return  "+--------------------------+\n" +
+                "| id: " + id + "\n" +
+                "| numero da sala: " + numeroSala + "\n" +
+                "| nome da sala: " + nomeSala + "\n" +
+                "| quantidade de alunos: " + qtdAlunos + "\n" +
+                "+--------------------------+";
     }
 
 }

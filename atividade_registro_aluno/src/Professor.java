@@ -39,11 +39,11 @@ public class Professor {
 
     @Override
     public String toString() {
-        return "Professor{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", materia='" + materia + '\'' +
-                '}';
+        return  "+---------------+\n" +
+                "| id: " + id + "\n" +
+                "| nome: " + nome + "\n" +
+                "| materia: " + materia + "\n" +
+                "+---------------+";
     }
 
 }
