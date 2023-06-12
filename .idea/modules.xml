@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/atividade.Java.iml" filepath="$PROJECT_DIR$/.idea/atividade.Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atividade_aluno/atividade_aluno.iml" filepath="$PROJECT_DIR$/atividade_aluno/atividade_aluno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/atividade_registro_aluno/atividade_registro_aluno.iml" filepath="$PROJECT_DIR$/atividade_registro_aluno/atividade_registro_aluno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistema_escolar/sistema_escolar.iml" filepath="$PROJECT_DIR$/sistema_escolar/sistema_escolar.iml" />
+    </modules>
+  </component>
+</project>
